@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="header_title">Jimmy's Diner</h1>
+                <h3 class="header_subtitle">The best burgers and pizzas in town</h3>
+            </header>
+            <div class="modal" id="modal">
+                <div class="close-modal-btn-container">
+                    <button class="modal-close-btn" id="modal-close-btn">X</button>
+                </div>
+                <div class="modal-inner" id="modal-inner">
+                    <h2 class="modal_txt">Enter card details</h2>
+                    <form id="info-form">
+                        <input type="text" name="name" placeholder="Enter your name" required/>
+                        <input type="number" inputmode="numeric" name="cardNumber" placeholder="Enter card number" required/>
+                        <input type="number" name="CVV" placeholder="Enter CVV" required/>
+                        <button type="submit" class="modal-pay-btn">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <main>
+                <div id="food-list" class="food">
+                </div>
+            </main>
+            <footer>
+                <div id="order-list" class="order_resume">
+                    
+                    
+                </div>
+            </footer>
+        <script src="index.js" type="module"></script>
+    </div>
+    </body>
+</html>
+
