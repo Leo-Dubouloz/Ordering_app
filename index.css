@@ -46,6 +46,7 @@ header{
     color: whitesmoke;
     margin-bottom: 0;
 }
+
 .header_subtitle{
     font-size: 25px;
     font-weight: 400;
@@ -67,10 +68,18 @@ header{
     margin-right: 15px;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .food_img{
+        width: 90px;
+        height: 80px;
+        margin-top: 18px;
+    }
+}
+
 .content{
     display: flex;
     flex-direction: column;
-    
 }
 
 .food_title{
@@ -79,14 +88,35 @@ header{
     font-weight: 400;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .food_title{
+        font-size: 40px;
+    }
+}
+
 .food_content{
     margin: 0;
-    width: 200px;
+    width: 300px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .food_content{
+        font-size: 28px;
+    }
 }
 
 .food_price{
     margin: 8px 0 0 0;
     font-size: 22px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .food_price{
+        font-size: 30px;
+    }
 }
 
 .add-btn{
@@ -106,6 +136,15 @@ header{
     text-align: center;
     height: 40px;
     width: 40px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .add{
+        height: 60px;
+        width: 60px;
+        font-size: 40px;
+    }
 }
 
 .add:hover{
@@ -135,6 +174,13 @@ header{
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 1000px)
+{
+    .remove_txt{
+        font-size: 19px;
+    }
+}
+
 .remove_txt:hover{
     cursor: pointer;
     transform: scale(1.2);
@@ -143,13 +189,19 @@ header{
 .food_price_order{
     text-align: end;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 12px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .food_price_order{
+        font-size: 24px;
+    }
 }
 
 .separation{
     width: 100%;
-    
     border: 2px solid #393333;
 }
 
@@ -174,6 +226,9 @@ header{
 .order_btn:hover{
     cursor: pointer;
 }
+
+
+/*/////////// modal element //////////////////*/
 
 .modal {
     display: none;
@@ -204,8 +259,6 @@ header{
     margin-bottom: 35px;
     font-size: 18px;
 }
-
-/* modal buttons */
 
 .close-modal-btn-container{
     text-align: right;
